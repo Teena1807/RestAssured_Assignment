@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4527" started-at="2021-05-31T06:38:32Z" finished-at="2021-05-31T06:38:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4527" started-at="2021-05-31T06:38:32Z" finished-at="2021-05-31T06:38:37Z">
+      <class name="IBM.RestAssured_Assignment.Scenario2_SOAP">
+        <test-method status="PASS" signature="soapscenario2()[pri:0, instance:IBM.RestAssured_Assignment.Scenario2_SOAP@53b32d7]" name="soapscenario2" duration-ms="4487" started-at="2021-05-31T06:38:32Z" finished-at="2021-05-31T06:38:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- soapscenario2 -->
+      </class> <!-- IBM.RestAssured_Assignment.Scenario2_SOAP -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
