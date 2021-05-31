@@ -68,9 +68,12 @@ public class RestAssuredBody {
 String reqbody = obj.writerWithDefaultPrettyPrinter().writeValueAsString(petobj);
 System.out.println(reqbody);
 RestAssured.baseURI="https://petstore.swagger.io/v2/";
-given().body(reqbody)
+Response rs =given().body(reqbody)
 .headers("content-type","Application/JSON"). when()
- .post("pet"). then() .log() .all();
+ .post("pet").then().log().all().statusCode(200).extract().response();
+
+int statusCode = rs.getStatusCode();
+Assert.assertEquals(200, statusCode);
 
 	}
 @DataProvider (name="my data")
